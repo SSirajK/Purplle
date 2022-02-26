@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <script src="https://kit.fontawesome.com/829a9fc93f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="addcart.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <div class="review"><h1>Review your bag</h1></div>
+    <div class="checkout">
+        <div id="container2">
+        </div>
+    <div id="checkout">
+        <div class="summ">Order Summary</div>
+    <div class="flex"><p>Subtotal </p>
+        <p class="sub"></p>
+    </div>
+    <p class="zero">Free shipping within 25 mile radius</p>
+    <div><button id="dist" onclick="functiondist()">distance</button>
+    <input type="number" class="dist" placeholder="HQ to location in miles" value=""></div>
+    <div class="flex"><p>Shipping Charges</p><p class="ship"></p></div>
+    <p>Apply <u><b>MASAI25</u></b> to get 25% discount</p>
+    <hr>
+    <div class="flex">
+        <h3 class="flex">Enter distance to proceed</h3>
+    </div>
+    <hr><br>
+    <input id="offers" type="text" placeholder="Enter Promo Code" disabled=true><button onclick="offer()" id="offer">Submit</button><br><br><br>
+    <button class="con" onclick="window.location.href='home.html'">Continue Shopping</button>
+    <button class="check-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+    </div>
+    </div>
+</div>
+
+    <div id="footer"></div>
+
+</body>
+</html>
+<script type="module">
+    
+    import {navbar,footer} from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+
+    let foot_con = document.getElementById('footer')
+    foot_con.innerHTML = footer()
+
+</script>
+<script src="addcart.js"></script>
