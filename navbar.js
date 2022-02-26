@@ -9,7 +9,7 @@ function navbar(){
     </div>
     <div id="nav2">
     <div id="underdiv21">
-        <img id="purpleimg" src="/mostviewed.JPG" alt="">
+        <img id="purpleimg" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="">
     </div>
     <div id="underdiv22">
         
