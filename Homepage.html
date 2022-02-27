@@ -176,9 +176,11 @@
 </html>
 <!-- -------------------------------------------------------Scripts--------------------------------------------------- -->
 <script type="module">
-     import navbar from './components/navbar.js'
+     import {navbar,footer} from './navbar.js'
     let navbar_con = document.getElementById('navbar')
     navbar_con.innerHTML=navbar()
+    let foot_con = document.getElementById('footer')
+    foot_con.innerHTML=footer()
     let slide_img = document.getElementById('images');
 
 let i = 0;
