@@ -124,7 +124,7 @@ function navbar(){
         <div id="signindiv">
     
             <button id="button"><a href="signin.html" style="color: white;">Sign  in</a></button>
-            <p class="para">new customer?<a href="" style="color: #ff147b;">start here</a></p>
+            <p class="para">new customer?<a href="signup.html" style="color: #ff147b;">start here</a></p>
             <hr style="color: gray;">
     
             <p class="para">your order</p>
