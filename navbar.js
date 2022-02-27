@@ -17,7 +17,7 @@ function navbar(){
          <div class="submenu1">
             <div id="subline1">
                <h6>FACE MAKEUP</h6>
-                <p><a href="topbrands">foundation</a></p>
+                <p><a href="topbrands.html">foundation</a></p>
                 <p><a href="/topbrands.html">BB & CC creame</a></p>
                 <p><a href="/topbrands.html">blush</a></p>
                 <p><a href="/topbrands.html">primer</a></p>
