@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/829a9fc93f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="/index.css">
+    
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="sort-select" ></div>
+  <select name="" id="sort_select" onchange="h()">
+    <option value="">sort by price</option>
+    <option value="high">high to low</option>
+    <option value="low">high to low</option>
+  </select>
+    <div id="container">
+    
+    </div>
+    
+    
+ 
+</body>
+</html>
+<script type="module">
+    var lipstick;
+    import navbar from './components/navbar.js'
+    let navbar_con = document.getElementById('navbar')
+    navbar_con.innerHTML=navbar()
+    import appenddata from "/index.js"
+    lipstick=[
+     {
+      image_url:
+        "https://images.unsplash.com/photo-1631214524049-0ebbbe6d81aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "Bobbi Brown Lip Color",
+      price: "1170",
+      strikedoffprice: "899",
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1631214499500-2e34edcaccfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      name: "NARS Lipstick ",
+      price: 699,
+      strikedoffprice: 399,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1593939202577-6bf5b21cb507?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      name: "M.A.C Lipstick - Nudes",
+      price: 945,
+      strikedoffprice: 700,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      name: "Myth by M.A.C",
+      price: 399,
+      strikedoffprice: 300,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGlwc3RpY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      name: "M.A.C Little Lipstick ",
+      price: 1620,
+      strikedoffprice: 800,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1602261036425-9bb62da15969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 ",
+      name: "NARS Lipstick" ,
+      price: 1440,
+      strikedoffprice: 650,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1633902658394-de9ce96d326c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: " M.A.C Lipstick Shine ",
+      price: 1999,
+      strikedoffprice: 1150,
+    },
+    {
+      image_url:
+                "https://images.unsplash.com/photo-1633902658394-de9ce96d326c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" ,
+      name: "MAC Red Lipstick",
+      price: 769,
+      strikedoffprice: 680,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1555050455-f96634b5cba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "NARS Semi Matte Lipstick - Schiap ",
+      price: 1299,
+      strikedoffprice: 780,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1633902657691-d78ea042b34f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "M.A.C Lip Pencil",
+      price: 699,
+      strikedoffprice: 980,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1583769298856-16aedeca86d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 ",
+      name: "CLINIQUE Almost Lipstick  ",
+      price: 1620,
+      strikedoffprice: 1050,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1610166970010-c2e6c3da7164?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "M.A.C Lipstick Matte ",
+      price: 1620,
+      strikedoffprice: 880,
+    },
+    {
+      image_url:
+        "https://images.unsplash.com/photo-1631214524085-17874764a0e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGxpcHN0aWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "DIOR Rouge Dior Lipstick ",
+      price: 599,
+      strikedoffprice: 402,
+    },
+    ]
+    let parent = document.getElementById('container')
+    appenddata(parent,lipstick)
+
+    
+    
+</script>
