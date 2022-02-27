@@ -13,13 +13,16 @@
 <body>
   <div id="navbar"></div>
     <div id="container"></div>
+    <footer id="footer"></footer>
 </body>
 </html>
 <script type="module">
-    
-    import navbar from './components/navbar.js'
+        import {navbar,footer} from './navbar.js'
     let navbar_con = document.getElementById('navbar')
     navbar_con.innerHTML=navbar()
+
+    let foot_con = document.getElementById('footer')
+    foot_con.innerHTML = footer()
 
     import appenddata from '/index.js'
      let lipstick=[
