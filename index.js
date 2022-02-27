@@ -26,7 +26,7 @@ function appenddata(parent,data){
         div.append(para)
 
         let para1 = document.createElement('p')
-        para1.innerHTML="discount price: "+element.price.strike()
+        para1.innerHTML="discount price: "+element.price
         div.append(para1)
         
         let but =document.createElement('button')
