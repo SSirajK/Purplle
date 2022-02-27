@@ -123,7 +123,7 @@ function navbar(){
         <img id="signimg" src="/signimg.JPG" alt="">
         <div id="signindiv">
     
-            <button id="button"><a href="" style="color: white;">Sign  in</a></button>
+            <button id="button"><a href="signin.html" style="color: white;">Sign  in</a></button>
             <p class="para">new customer?<a href="" style="color: #ff147b;">start here</a></p>
             <hr style="color: gray;">
     
